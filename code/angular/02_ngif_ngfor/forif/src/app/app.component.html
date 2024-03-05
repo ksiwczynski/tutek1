@@ -1,0 +1,14 @@
+<main>
+  @if (show) {
+    <p>{{ showMessage }}</p>
+  }
+  @for (item of forArray; track item) {
+    <p>{{ item }}</p>
+  }
+  <!-- starszy angular
+  <div *ngIf="show"><p>{{ showMessage }}</p></div>
+  <div *ngFor="let item of forArray; index as i; track item"><p>{{ item }}</p></div>
+  -->
+</main>
+
+<router-outlet />
