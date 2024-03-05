@@ -1,0 +1,34 @@
+wymagane:
+VSCode + Angular Language Service (ext)
+node.js // https://nodejs.org/en (20 LTS)
+opcjonalnie:
+VS // do uruchamiania API ale można też w VSCode
+
+typescript
+https://code.visualstudio.com/docs/typescript/typescript-compiling
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
+npm install -g typescript // instaluje kompilator typescript
+tsc --version // wyświetla wersję kompilatora typescript
+tsc xxx.ts // kompiluje plik xxx.ts do javascript
+tsc -p tsconfig.json // kompiluje projekt do javascript
+node xxx.js // uruchamia skompilowany plik
+
+angular
+https://angular.io/tutorial
+https://angular.io/guide
+https://angular.dev/
+
+node --version // sprawdzamy zainstalowaną wersję node.js
+
+npm install -g @angular/cli // instaluje angular cli (konsola angular)
+ng xxx // konsola angular wykonuje polecenie xxx // w przypadku gdy nie możemy wykonać poleceń korzystamy z node: npm run ng xxx
+
+npm install // po otwarciu projektu nad którym jeszcze nie pracowaliśmy instaluje zależności dodane do projektu
+
+ng new nazwa_aplikacji // tworzy nowy projekt angular
+ng serve --open // uruchamia projekt // parametr open otwiera automatycznie przeglądarkę
+ng generate xxx // generuje dodatkowe elementy aplikacji (np. component, service, pipeline)
+ng build // buduje projekt bez uruchamiania
+ng test // uruchamia unit testy
+
