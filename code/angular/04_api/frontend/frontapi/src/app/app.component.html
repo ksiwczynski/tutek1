@@ -1,0 +1,13 @@
+<main>
+  <button (click)="pobierzApi()">Pogoda na najbliższe 5 dni</button>
+  @for (item of lista; track item) {
+    <p>
+      <span>Data: {{ item.date }}</span><br/>
+      <span>Temperatura &#176;C: {{ item.temperatureC }}&#176;C</span><br/>
+      <span>Temperatura &#176;F: {{ item.temperatureF }}&#176;F</span><br/>
+      <span>Podsumowanie: {{ item.summary }}</span><br/>
+    </p>
+  }
+</main>
+
+<router-outlet />
