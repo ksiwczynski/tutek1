@@ -20,12 +20,12 @@ namespace WebApi
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
-            }
 
-            app.UseCors(conf =>
-            {
-                conf.WithOrigins("http://localhost:4200");
-            });
+                app.UseCors(conf =>
+                {
+                    conf.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+                });
+            }
 
             app.UseAuthorization();
 
