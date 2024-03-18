@@ -28,7 +28,8 @@ npm install // po otwarciu projektu nad którym jeszcze nie pracowaliśmy instal
 
 ng new nazwa_aplikacji // tworzy nowy projekt angular
 ng serve --open // uruchamia projekt // parametr open otwiera automatycznie przeglądarkę
-ng generate xxx // generuje dodatkowe elementy aplikacji (np. component, service, pipeline)
+ng generate xxx nazwa_elementu // generuje dodatkowe elementy aplikacji (np. component, service, pipeline)
 ng build // buduje projekt bez uruchamiania
 ng test // uruchamia unit testy
 
+npm run xxx // uruchamia polecenie jeżeli nie mamy uprawnień do uruchamiania bezpośrednio np. npm run ng build
